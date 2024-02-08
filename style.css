@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 500;
+  color:#fff;
+  background: url('background.jpg') no-repeat;
+  background-size:  fill;  
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index:-1;
+  display: flex;
+  justify-content: center;
+  align-items:  center;
+}
+
+.container {
+  display: block;
+  position: relative;
+  width: 450px;
+  height: 679px;
+  margin: auto;
+  box-shadow: 1px 5px 25px 1px #f2f2f2;
+  overflow:hidden;
+  scale: 1;
+}
+
+img.bg-img {
+  display: block;
+  position: absolute;
+  margin: auto;
+}
+
+.menu {
+  position: relative;
+  padding: 15% 13% 0 13%;
+}
+.menu h2 {
+  display: inline;
+  margin: 20px;
+  padding-bottom: 3px;
+  border-bottom: 3px solid #1161ee;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+a:hover {
+  text-decoration: inherit;
+}
+
+h1 {
+  text-align:center; 
+  color: #666;
+  text-shadow: 1px 1px 0px #FFF;
+  margin:50px 0px 0px 0px}
+  h2 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  h3 {
+    font-size: 17px;
+    font-weight: 600;
+  }
+
+a:not(.active) {
+  cursor:inherit;
+}
+
+.menu .active h2 {
+  border-bottom: 0 solid #1161ee;
+  color: #AEAEAE;
+  transition: color 0.5s ease-in;
+}
+
+.Sign_in {
+  position: absolute;
+  padding: 15% 13%;
+  width: 74%;
+  left:0px;
+  transition: all 0.7s;
+}
+
+.Sign_in h2 {
+  display: inline;
+  margin: 20px;
+  padding-bottom: 3px;
+  border-bottom: 2px solid #1161ee;
+}
+
+.Sign_in h4 {
+  margin-bottom: 0;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.3;
+}
+
+.Sign_in h4:hover {
+  opacity: 0.8;
+  transition: all 0.1s ease-in;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+}
+
+input {
+  display: block;
+  width: 93%;
+  margin: auto;
+  padding: 4px 13px 4px 13px;
+  border: 0;
+  border-radius: 15px;
+  font-family: "Poppins",sans-serif;
+  font-size: 1.2rem;
+  opacity: 1;
+  color: #fff;
+  background-color: #ffffff51;
+  cursor: pointer;
+}
+input:focus{
+  outline: none;
+}
+
+input.submit {
+  width: 100%;
+  padding: 10px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff;
+  opacity: 1;
+  background-color: #1161EE;
+  cursor: pointer;
+}
+.check label {
+  float: left;
+  width: 10%;
+  margin-left: 5%;
+  cursor: pointer;
+}
+
+.check h3 {
+  padding: 15px;
+}
+
+.checkbox {
+  display: none;
+}
+
+.checkbox:checked + svg .path-moving {
+  -webkit-transition: stroke .4s,stroke-dasharray .4s,stroke-dashoffset .4s cubic-bezier(.3,.8,.6,1.5);
+  transition: stroke .4s,stroke-dasharray .4s,stroke-dashoffset .4s cubic-bezier(.3,.8,.6,1.5);
+  stroke-dasharray: 25 90;
+  stroke-dashoffset: 0;
+}
+
+.path-moving,
+.path-back {
+  fill: none;
+  stroke: #1161ee;
+  stroke-width: 3px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.path-moving {
+  -webkit-transition: stroke .4s,stroke-dasharray .4s,stroke-dashoffset .4s;
+  transition: stroke .4s,stroke-dasharray .4s,stroke-dashoffset .4s;
+  stroke: #ffffff;
+  stroke-dasharray: 110;
+  stroke-dashoffset: -32;
+}
+
+.Sign_up {
+  position: absolute;
+  padding: 15% 13%;
+  width: 74%;
+  right:0px;
+  transition: all 0.7s;
+}
+.link{
+  text-decoration: underline;
+}
+#link:hover{
+  text-decoration: underline;
+}
+.active-section {
+  position: absolute;
+  right:500px;
+}
+.remove-section {
+  position: absolute;
+  left: 500px;
+}
+
+.info p {
+  text-align:center;
+  color: #999;
+  text-transform:none;
+  font-weight:600;
+  font-size:15px;
+  margin: top 2%;}
+
+  .info i {
+    color:#55acee;
+  }
+
+  hr {
+    position: relative;
+    margin-top: 27%;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    opacity: 0.15;
+  }
